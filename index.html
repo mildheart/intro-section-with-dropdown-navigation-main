@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body >
+  <div class="overlay_container hide"></div>
+  <header>
+    <nav>
+      <img src="/images/logo.svg" alt="Logo" class="logo_img">
+      <ul>
+        <li class="feature ">
+          <div class="menu">
+            <p>Features</p>
+            <img src="images/icon-arrow-down.svg" id="feature_icon" class="direction_box">
+        </div>
+        <div  class="menuitem hide">
+            <div class="todo">
+                <img src="images/icon-todo.svg" alt="todo_icon">
+                <p>Todo List</p>
+            </div>
+            <div class="calender">
+                <img src="images/icon-calendar.svg" alt="calender_icon">
+                <p>Calendar</p>
+            </div>
+            <div class="reminder">
+              <img src="images/icon-reminders.svg" alt="reminder_icon">
+              <p>Reminders</p>
+            </div>
+            <div class="planning">
+              <img src="images/icon-planning.svg" alt="planning_icon">
+              <p>Planning</p>
+            </div>
+        </div> 
+      </li>
+        <li class="company">
+            <div class="menu">
+              <p>Company</p> 
+              <img src="images/icon-arrow-down.svg" id="company_icon" class="direction_box">
+            </div>
+            <div class="menuitem hide">
+              <p>History</p>
+              <p>Our Team</p>
+              <p>Blog</p>
+            </div>
+
+        </li>
+        <li class="career">Careers </li>
+        <li class="about">About</li>
+      </ul>
+    </nav> 
+    <div class="login_Register_container">
+      <button class="login">Login</button>
+      <button class="register">Register</button>
+        <img src="images/icon-menu.svg" alt="Menu Logo" id="menu_id" class="menu_logo">
+        <div class="mobile_menu_container hide_with_space_removed">
+          <img src="images/icon-close-menu.svg" alt="Close Logo" id="mobile_close_id" class="Mobile_close">
+          <ul>
+            <li class="mob_feature ">
+              <div class="mob_menu">
+                <p>Features</p>
+                <img src="images/icon-arrow-down.svg" id="mob_feature_icon" class="direction_box">
+            </div>
+            <div  class="mob_menuitem hide_with_space_removed ">
+                <div class="todo">
+                    <img src="images/icon-todo.svg" alt="todo_icon">
+                    <p>Todo List</p>
+                </div>
+                <div class="calender">
+                    <img src="images/icon-calendar.svg" alt="calender_icon">
+                    <p>Calendar</p>
+                </div>
+                <div class="reminder">
+                  <img src="images/icon-reminders.svg" alt="reminder_icon">
+                  <p>Reminders</p>
+                </div>
+                <div class="planning">
+                  <img src="images/icon-planning.svg" alt="planning_icon">
+                  <p>Planning</p>
+                </div>
+            </div> 
+          </li>
+            <li class="mob_company">
+                <div class="mob_menu">
+                  <p>Company</p> 
+                  <img src="images/icon-arrow-down.svg" id="mob_company_icon" class="direction_box">
+                </div>
+                <div class="mob_menuitem hide_with_space_removed">
+                  <p>History</p>
+                  <p>Our Team</p>
+                  <p>Blog</p>
+                </div>
+    
+            </li>
+            <li class="career">Careers </li>
+            <li class="about">About</li>
+          </ul>
+          <button class="mob_login">Login</button>
+          <button class="mob_register">Register</button>
+        </div>
+    </div>
+  </header>
+ 
+  <main class="main_container">
+    <div class="left_container">
+              <p class="mob_title">Make remote work</p>
+              <p class="title">Make <br> remote work</p>
+              <p class="description"> Get your team in sync, no matter your location. Streamline processes, 
+                 create team rituals, and watch productivity soar.</p>
+              <button class="lean_more">Learn more</button>
+
+              <div class="other_company_logo">
+                <img src="images/client-databiz.svg" alt="databiz" class="Oth_logo">
+                <img src="images/client-audiophile.svg" alt="Client Audiophile" class="Oth_logo">
+                <img src="images/client-meet.svg" alt="" class="Oth_logo">
+                <img src="images/client-maker.svg" alt="Maker" class="Oth_logo">
+              </div>
+      </div>
+      <div class="right_container">
+        <img src="/images/image-hero-mobile.png"  class="mob_img_container">
+        <img src="/images/image-hero-desktop.png"  class="img_container">
+      </div>
+  </main>
+  <script src="JS/main.js"></script>  
+</body>
+</html>

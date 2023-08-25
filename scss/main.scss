@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Epilogue-bold;
+    src: url('/font/static/Epilogue-ExtraBold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Epilogue-medium;
+    src: url('/font/static/Epilogue-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Epilogue-light;
+    src: url('/font/static/Epilogue-Light.ttf');
+}
+
+html,body,header,nav, nav ul,.menu,.menuitem,.menuitem div,.main_container,.left_container .other_company_logo,.mobile_menu_container, .mob_menuitem div,.mob_menu,.left_container{
+    display: flex;
+}
+
+html,body,.overlay_container{
+    width: 100%;
+    height: 100vh;
+}
+
+html,body{ 
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.overlay_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+header{
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+.logo_img{
+    width: 85px;
+    margin-right: 44px;
+}
+
+nav ul, .mobile_menu_container ul {
+    list-style: none;
+}
+
+.overlay_container,.mob_login,.mob_register,.mob_company .mob_menuitem p,.Mobile_close,.menu_logo,.mob_menuitem div,.mob_menu,.menu, .lean_more, .career ,.login,.register, .about,.menuitem div,.company .menuitem p{
+    
+    cursor: pointer;
+}
+
+.login_Register_container{
+    margin-left: auto;
+}
+
+.direction_box{
+    width: 8px;
+    height: 5px;
+    margin-top: 3px;
+    margin-left: 4px;
+    
+}
+
+header, .menu{
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    position: relative;
+}
+
+.menuitem,.left_container{
+    flex-direction: column;
+}
+
+.menuitem{
+   
+    padding: 10px;
+    position: absolute;
+    top: 58px;
+    border: none;
+    border-radius: 8px;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 5px 3px 15px 5px  #8888887d;
+    z-index: 1;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.feature .menuitem{
+
+    width: 120px;
+    height: 150px;
+    left: 110px;
+    padding-right: 17px;
+
+}
+
+.company .menuitem{
+    width: 90px;
+    height: 120px;
+}
+
+.menuitem div{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mob_menuitem div, .mob_company .mob_menuitem{
+    width: 100%;
+    padding-left: 15px;
+    align-items: center;
+    
+}
+
+.mob_menuitem div, .mob_company .mob_menuitem, .mob_company .mob_menuitem p{
+    margin-bottom: 10px;
+}
+
+.menuitem div p, .mob_menuitem div p{
+    text-align: start;
+    margin-left: 12px;
+}
+
+.feature .menuitem div img, .mob_menuitem div img{
+    width: 12px;
+    height: 12px;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+.login{
+    margin-right: 20px
+}
+
+.login, .mob_login{
+    border: none;
+    background-color: transparent;
+}
+
+.mob_login{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.register, .mob_register{
+    background-color: transparent;
+    border: none;
+    border-width: 2px;
+    border-color: hsl(0, 0%, 41%);
+    border-style: solid;
+    border-radius: 8px;
+    padding: 8px 13px;
+
+}
+
+.mob_register{
+    padding: 15px 13px;
+}
+
+.main_container{
+    width: 100%;
+    height: 100%;
+}
+
+.img_container,.mob_img_container{
+    width: 100%;
+    height: 100%;
+}
+
+.left_container .other_company_logo img{
+    width: 58px;
+    height: 20px;
+}
+
+
+.title,.mob_title{
+    font-family: 'Epilogue-bold', sans-serif;
+}
+
+
+nav p,nav ul li, .mobile_menu_container ul li, .mob_register,.mob_login{
+    font-family: 'Epilogue-Medium',sans-serif;
+
+}
+
+nav p, nav ul li{
+    font-size: 13px;
+
+}
+
+.description{
+    font-family: 'Epilogue-light',sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+
+.lean_more{
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    font-size: 17px;
+    padding: 14px 27px;
+    margin-top: 25px;
+    font-weight: bolder;
+    
+}
+
+.lean_more:hover{
+    background-color: transparent;
+    color:  black;
+    border-width: 2px;
+    border-color: hsl(0, 0%, 41%);
+    border-style: solid;
+
+}
+
+.menu_logo{
+    display: none;
+}
+
+.mobile_menu_container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(0, 0%, 98%);
+    width: 70vw;
+    z-index: 5;
+    padding: 20px  30px;
+    flex-direction: column;
+}
+
+
+.Mobile_close{
+    
+    margin-left: auto;
+}
+
+.mob_menu img{
+    margin-top: 6px;
+    margin-left: 12px;
+}
+.mob_menu,.mobile_menu_container .career{
+    margin-bottom: 10px;
+}
+
+.hide_with_space_removed{
+    display: none;
+}
+
+.lean_more:focus,.login:focus,.register:focus,.mob_login:focus,.mob_register:focus{
+    outline: none;
+    box-shadow: none;
+}
+nav{
+    
+    align-items: center;
+}
+
+
+//For mobile and tablet mode
+@media screen and (max-width: 768px) {
+
+    
+    nav ul, .login,.register,.title{
+        display: none;
+    }
+
+    .menu_logo{
+        display: inline-block;
+    }
+
+    .right_container {
+        height: 40%;
+
+    }
+    
+
+    .left_container{
+        
+        height: 60%;
+        padding-top: 10%;
+        align-items: center;
+        
+    }
+    .main_container{
+        padding-top: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .img_container{
+        display: none;
+    }
+
+    .mob_title{
+        font-size: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+        
+    }
+
+    .description{
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .left_container .other_company_logo{
+        width: 90%;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-between;
+    }
+    
+}
+//For Tablet Mode
+@media screen and (min-width: 483px) and (max-width: 768px) {
+    .mob_title{
+        font-size: 73px;
+        margin-bottom: 28px;
+    }   
+    
+    .description{
+        font-size: 27px;
+    }
+
+    .lean_more{
+        font-size: 30px;
+        padding: 20px 47px;
+        margin-top: 40px;
+        
+    }
+
+    .left_container .other_company_logo img{
+        width: 80px;
+        height: 40px;
+    }
+
+    
+    .logo_img{
+        width: 96px;
+    }
+
+    .mobile_menu_container ul li, .mob_register,.mob_login{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .main_container{
+        height: inherit;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 5%;
+        padding-top: 4%;   
+    }
+
+    .left_container, .right_container{
+        height: 100%;
+        
+    
+    }
+
+    .left_container{
+        padding-top: 8%;
+        padding-left: 2%;
+        padding-right: 10%;
+        width: 65%;
+        position: relative;
+    }
+
+    .right_container{
+        width:35%
+    }
+
+    .mob_img_container,.mob_title{
+        display: none;
+    }
+    
+    .title{
+        font-size: 58px;
+        margin-bottom: 40px;
+    }
+    
+    .description{
+        width: 68%;
+    }
+
+    .left_container .other_company_logo{
+        width: 68%;
+        position: absolute;
+        bottom: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lean_more{
+        align-self: flex-start;
+    }
+}
+
+//small screen laptop
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .title{
+        
+        font-size: 63px;
+        margin-bottom: 28px;
+    }   
+    
+    .description{
+       
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .lean_more{
+        font-size: 24px;
+        padding: 18px 40px;
+        margin-top: 40px;
+        
+    }
+
+    .left_container .other_company_logo img{
+        width: 70px;
+        height: 30px;
+    }
+
+    
+    .logo_img{
+        width: 96px;
+    }
+
+    .register,.login,nav p,nav ul li{
+        font-size: 18px;
+    }
+
+    .left_container{
+        padding-top: 12%;
+        
+    }
+
+    .company .menuitem{
+        width: 110px;
+        height: 120px;
+    }
+
+    .feature .menuitem{
+
+        width: 145px;
+        height: 150px;
+             
+    
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .title{
+        
+        font-size: 65px;
+        margin-bottom: 25px;
+    }   
+    
+    .description{
+       
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .lean_more{
+        font-size: 24px;
+        padding: 18px 40px;
+        margin-top: 30px;
+        
+    }
+
+    .left_container .other_company_logo img{
+        width: 60px;
+        height: 20px;
+    }
+
+    
+    .logo_img{
+        width: 110px;
+    }
+
+    .register,.login,nav p,nav ul li{
+        font-size: 20px;
+    }
+
+    .left_container{
+        
+        padding-top: 9%;
+        
+    }
+
+    .company .menuitem{
+        width: 120px;
+        height: 130px;
+    }
+
+    .feature .menuitem{
+
+        width: 155px;
+        height: 160px;
+             
+    
+    }
+
+    .register{
+        padding: 10px 16px;
+    }
+
+    .menuitem{
+        top: 68px;
+    }
+    
+}
+
+@media screen  and (min-width: 1441px) and (max-width: 2560px) {
+
+    .main_container{
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 3%;
+        padding-top: 4%;   
+    }
+
+
+    .title{
+        
+        font-size: 84px;
+        margin-bottom: 28px;
+        
+    }   
+    
+    .description{
+       
+        width: 90%;
+        font-size: 35px;
+    }
+
+    .lean_more{
+        font-size: 29px;
+        padding: 18px 40px;
+        margin-top: 40px;
+        
+    }
+
+    .left_container .other_company_logo img{
+        width: 70px;
+        height: 30px;
+    }
+
+    
+    .logo_img{
+        width: 130px;
+        margin-right: 75px;
+    }
+
+    .register,.login,nav p,nav ul li{
+        font-size: 27px;
+    }
+
+    .left_container{
+        padding-top: 2%;
+        
+    }
+
+    .company .menuitem{
+        width: 170px;
+        height: 160px;
+    }
+
+    .feature .menuitem{
+
+        width: 200px;
+        height: 185px;
+        left: 160px;
+    
+    }
+
+    .register{
+        padding: 10px 16px;
+    }
+
+    .menuitem{
+        top: 75px;
+    }
+    
+    nav ul li{
+        margin-right: 40px;
+    }
+
+    .direction_box{
+        width: 16px;
+        height: 10px;
+        margin-top: 3px;
+        margin-left: 8px;
+        
+    }
+
+    .menuitem{
+        padding-right: 20px;
+    }
+
+    
+}
